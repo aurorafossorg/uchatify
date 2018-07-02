@@ -1,0 +1,32 @@
+{
+	"name": "uchatify",
+	"description": "Unified chat system with a lot of integrations",
+	"version": "0.0.1",
+	"author": "Luís Ferreira",
+	"license": "MIT",
+	"homepage": "https://www.aurorafoss.org/uchatify/",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bugs": {
+		"url": "https://gitlab.com/aurorafossorg/apps/uchatify/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@gitlab.com:aurorafossorg/apps/uchatify.git"
+	},
+	"bin": {
+		"uchatify": "dist/index.js"
+	},
+	"dependencies": {
+		"@types/node": "^10.5.1",
+		"discord.js": "^11.3.2",
+		"pg": "^7.4.3"
+	},
+	"devDependencies": {
+		"typescript": "^2.9.2"
+	},
+	"scripts": {
+		"compile": "node node_modules/typescript/lib/tsc.js",
+		"start": "node dist/index.js"
+	}
+}
